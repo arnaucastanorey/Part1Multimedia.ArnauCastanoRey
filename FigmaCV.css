@@ -1,0 +1,320 @@
+
+/*Això ho he fet perque sino no tenia manera de que les tipografíes em coincidicin amb les del figma*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Platypi:wght@700&family=Playfair+Display:wght@700&display=swap");
+
+
+:root {
+    
+    --beige: #f5f3ef;
+    --dark: #14181c;
+    --magenta: #17b7b0;
+    --magentaFort: #0e8a85;
+    --text: #333;
+    --muted: #6b6b66;
+    --border: #dddad3;
+    --LanguagestableText: #cee8eb;
+    --ColorTextAbout: #d9dee2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: var(--beige);
+  color: var(--text);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1680px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Estils per a les etiquetes de títol */
+.label {
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 2.38px;
+  margin-bottom: 26px;
+  color: var(--magenta);
+}
+
+.labelDark {
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 2.38px;
+  margin-bottom: 26px;
+  color: var(--dark);
+}
+
+
+.presentation {
+  background-color: var(--beige);
+  padding: 32px 0;
+}
+
+.Personal.text {
+  float: left;
+  width: 56%;
+  padding-top: 116px;
+}
+
+.Personal.text h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 128px;
+  line-height: 156px;
+  color: var(--dark);
+  margin-bottom: 24px;
+}
+
+.Personal.text h2 {
+  font-family: "Platypi", serif;
+  font-size: 50px;
+  color: var(--magentaFort);
+  margin-bottom: 24px;
+}
+
+.tagline {
+  display: inline-block;
+  background-color: var(--dark);
+  color: white;
+  font-size: 19px;
+  font-weight: 500;
+  padding: 12px 26px;
+  border-radius: 999px;
+  margin-bottom: 24px;
+}
+
+.introPersonal {
+  font-size: 23px;
+  line-height: 36px;
+}
+
+.photoArea {
+  float: right;
+  position: relative;
+  width: 680px;
+  height: 800px;
+}
+
+.photoArea figure {
+  position: absolute;
+  left: 112px;
+  top: 137px;
+  width: 525px;
+  height: 525px;
+}
+
+.photoArea img {
+  display: block;
+  width: 525px;
+  height: 525px;
+  border-radius: 50%;
+}
+
+.languages {
+  position: absolute;
+  left: 47px;
+  top: 523px;
+  width: 279px;
+  height: 243px;
+  padding: 40px;
+  background-color: var(--LanguagestableText);
+  border-radius: 32px;
+}
+
+.languages .label {
+  font-size: 16px;
+  letter-spacing: 2.24px;
+  margin-bottom: 18px;
+}
+
+.languages li {
+  font-size: 19px;
+  line-height: 29px;
+  color: #111;
+}
+
+
+.AboutMe {
+  background-color: var(--dark);
+  padding: 80px 0;
+}
+
+.aboutText {
+  float: left;
+  width: 65%;
+}
+
+.aboutText h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 76px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.rule {
+  width: 72px;
+  height: 4px;
+  border: none;
+  background-color: var(--magenta);
+  margin-bottom: 20px;
+}
+
+.AboutDescription {
+  font-size: 21px;
+  line-height: 33px;
+  color: var(--ColorTextAbout);
+}
+
+.PersonalDetails {
+  float: right;
+  width: 513px;
+  height: 280px;
+  padding-top: 38px;
+  padding-left: 72px;
+  border-left: 1px solid #2f363d;
+}
+
+.PersonalDetails li {
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 28px;
+}
+
+.PersonalDetails img {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+
+section:nth-of-type(3) {
+  background-color: var(--beige);
+  padding: 80px 0;
+}
+
+section:nth-of-type(3) .container {
+  border: 1px solid var(--border);
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+.col {
+  float: left;
+  width: 33.33%;
+  height: 428px;
+  padding: 56px;
+}
+
+.FORMATION { background-color: var(--beige); }
+.SKILLS     { background-color: white; }
+.EXPERIENCE { background-color: var(--dark); }
+
+.entry {
+  margin-bottom: 47px;
+}
+
+.EXPERIENCE .entry {
+  margin-bottom: 12px;
+}
+
+.entryTop {
+  overflow: hidden;
+  margin-bottom: 3px;
+  white-space: nowrap;
+}
+
+.entryTop h3 {
+  float: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: #111;
+}
+
+.entryTop span {
+  float: right;
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.entry p {
+  font-size: 10.5px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.EXPERIENCE .entryTop h3,
+.EXPERIENCE .entryTop span,
+.EXPERIENCE .entry p {
+  color: white;
+}
+
+.ToolsTitle {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 26px;
+}
+
+.Tools {
+  overflow: hidden;
+  margin-bottom: 26px;
+}
+
+.Tools img {
+  float: left;
+  width: 76px;
+  height: 76px;
+  margin-right: 16px;
+  border-radius: 18px;
+
+}
+
+.Tools img:last-child {
+  margin-right: 0;
+}
+
+.Tools img {
+  width: 84px;
+  height: 84px;
+}
+
+.EXPhead {
+  overflow: hidden;
+  margin-bottom: 26px;
+}
+
+.IconBag {
+  float: left;
+  width: 84px;
+  height: 84px;
+  padding: 23px;
+  border-radius: 50%;
+  background-color: var(--magenta);
+  margin-right: 20px;
+}
+
+.EXPhead h3 {
+  float: left;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 84px;
+  color: white;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: var(--dark);
+  height: 139px;
+}
